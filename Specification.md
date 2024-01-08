@@ -31,8 +31,8 @@ This packet is used to report location of a player to a server or for the server
 * `PacketTypeID`: 2
 * `PacketArgs`:
     * `Id | unsigned char` - Socket ID of the player that location is reported for
-    * `Location | string` - Comma-separated list of X, Y, and Z location coordinates
-    * `Rotation | string` - Comma-separated list of X, Y, Z, and W (*FQuat*) rotation coordinates
+    * `Location | float[3]` - list of X, Y, and Z location coordinates
+    * `Rotation | float[4]` - list of X, Y, Z, and W (*FQuat*) rotation coordinates
 
 ### `Logout` | *tcp*
 This packet is used to signal the server of a player leaving
